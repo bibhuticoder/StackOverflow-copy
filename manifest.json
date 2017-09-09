@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+
+  "name": "Stack Overflow",
+  "description": "Copy code from Stack-Overflow easily",
+  "version": "1.0",
+
+  "icons":{
+    "16": "images/16.png",
+    "64": "images/64.png",
+    "128": "images/128.png"
+  },
+
+  "page_action": {
+    "default_icon": "images/64.png",    
+    "default_title": "Stack-Overflow-Copy"
+  },
+
+ 
+  "background":{
+    "scripts": ["scripts/eventPage.js"],
+    "persistent": false
+  },
+
+  "content_scripts":[
+    {
+      "matches" : ["https://stackoverflow.com/*"],
+      "js": ["scripts/jquery.min.js", "scripts/content.js"],
+      "css": ["styles/content.css"]
+    }
+
+  ],
+
+  "permissions": [
+    "tabs",
+    "https://stackoverflow.com/*"
+  ]
+}

@@ -1,0 +1,21 @@
+.copy{			
+	padding: 5px !important;
+	cursor: pointer;	
+    float: right;
+    width: 45px;
+    border-width: 1px;   
+    color: white !important;
+    background-color: #07c !important;
+    border-color: #005999 !important;
+    box-shadow: inset 0 1px 0 #3af !important;
+}
+
+.copy span{
+	color: white !important;
+}
+
+.copy:hover{
+	opacity: 0.9;	
+}
+
+
